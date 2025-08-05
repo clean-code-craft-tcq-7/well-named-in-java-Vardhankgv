@@ -14,8 +14,8 @@ public final class ColourPairMapper {
 
         int zeroBasedPairNumber = pairNumber - 1;
 
-        MajorColour majorColor = MajorColor.fromIndex(zeroBasedPairNumber / NUMBER_OF_MINOR_COLORS);
-        MinorColour minorColor = MinorColor.fromIndex(zeroBasedPairNumber % NUMBER_OF_MINOR_COLORS);
+        MajorColour majorColor = MajorColour.fromIndex(zeroBasedPairNumber / NUMBER_OF_MINOR_COLORS);
+        MinorColour minorColor = MinorColour.fromIndex(zeroBasedPairNumber % NUMBER_OF_MINOR_COLORS);
 
         return new ColourPair(majorColor, minorColor);
     }
