@@ -8,31 +8,31 @@ public class MajorColourTest {
 
     @Test
     public void testFromIndexValid() {
-        for (MajorColor color : MajorColor.values()) {
-            assertEquals(color, MajorColor.fromIndex(color.getIndex()));
+        for (MajorColour color : MajorColour.values()) {
+            assertEquals(color, MajorColour.fromIndex(color.getIndex()));
         }
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testFromIndexInvalidNegative() {
-        MajorColor.fromIndex(-1);
+        MajorColour.fromIndex(-1);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testFromIndexInvalidTooLarge() {
-        MajorColor.fromIndex(100);
+        MajorColour.fromIndex(100);
     }
 
     @Test
     public void testGetIndexAndGetName() {
-        MajorColor color = MajorColor.RED;
+        MajorColour color = MajorColour.RED;
         assertEquals(1, color.getIndex());
         assertEquals("Red", color.getName());
     }
 
     @Test
     public void testToString() {
-        MajorColor color = MajorColor.BLACK;
+        MajorColour color = MajorColour.BLACK;
         assertEquals("Black", color.toString());
     }
 }

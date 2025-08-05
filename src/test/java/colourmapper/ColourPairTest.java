@@ -8,25 +8,25 @@ public class ColourPairTest {
 
     @Test
     public void testConstructorAndGetters() {
-        ColorPair pair = new ColorPair(MajorColor.YELLOW, MinorColor.GREEN);
+        ColourPair pair = new ColourPair(MajorColour.YELLOW, MinorColour.GREEN);
         assertEquals(MajorColor.YELLOW, pair.getMajorColor());
         assertEquals(MinorColor.GREEN, pair.getMinorColor());
     }
 
     @Test
     public void testToString() {
-        ColorPair pair = new ColorPair(MajorColor.VIOLET, MinorColor.SLATE);
+        ColourPair pair = new ColourPair(MajorColour.VIOLET, MinorColour.SLATE);
         assertEquals("Violet Slate", pair.toString());
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testConstructorNullMajorThrows() {
-        new ColorPair(null, MinorColor.BLUE);
+        new ColourPair(null, MinorColour.BLUE);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testConstructorNullMinorThrows() {
-        new ColorPair(MajorColor.RED, null);
+        new ColourPair(MajorColour.RED, null);
     }
 }
 

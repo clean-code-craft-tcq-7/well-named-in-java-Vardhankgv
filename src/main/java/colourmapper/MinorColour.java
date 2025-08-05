@@ -23,15 +23,15 @@ public enum MinorColour {
         return name;
     }
 
-    private static final MinorColor[] INDEX_MAP = new MinorColor[values().length];
+    private static final MinorColour[] INDEX_MAP = new MinorColour[values().length];
 
     static {
-        for (MinorColor color : values()) {
+        for (MinorColour color : values()) {
             INDEX_MAP[color.getIndex()] = color;
         }
     }
 
-    public static MinorColor fromIndex(int index) {
+    public static MinorColour fromIndex(int index) {
         if (index < 0 || index >= INDEX_MAP.length) {
             throw new IllegalArgumentException("Invalid MinorColor index: " + index);
         }

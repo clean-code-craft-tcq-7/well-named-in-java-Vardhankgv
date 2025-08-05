@@ -1,10 +1,10 @@
 package colourmapper;
 
 public final class ColourPair {
-    private final MajorColor majorColor;
-    private final MinorColor minorColor;
+    private final MajorColour majorColor;
+    private final MinorColour minorColor;
 
-    public ColourPair(MajorColor majorColor, MinorColor minorColor) {
+    public ColourPair(MajorColour majorColor, MinorColour minorColor) {
         if (majorColor == null || minorColor == null) {
             throw new IllegalArgumentException("Colors cannot be null");
         }
@@ -12,11 +12,11 @@ public final class ColourPair {
         this.minorColor = minorColor;
     }
 
-    public MajorColor getMajorColor() {
+    public MajorColour getMajorColor() {
         return majorColor;
     }
 
-    public MinorColor getMinorColor() {
+    public MinorColour getMinorColor() {
         return minorColor;
     }
 
