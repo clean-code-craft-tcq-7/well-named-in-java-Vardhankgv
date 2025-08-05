@@ -15,7 +15,7 @@ public class ColourPairMapperTest {
 
         for (int pairNumber = 1; pairNumber <= totalPairs; pairNumber++) {
             ColourPair pair = ColourPairMapper.getColorFromPairNumber(pairNumber);
-            int calculatedPairNumber = ColorPairMapper.getPairNumberFromColor(pair.getMajorColor(), pair.getMinorColor());
+            int calculatedPairNumber = ColourPairMapper.getPairNumberFromColor(pair.getMajorColor(), pair.getMinorColor());
             assertEquals("Round-trip failed for pairNumber " + pairNumber, pairNumber, calculatedPairNumber);
         }
     }

@@ -9,8 +9,8 @@ public class ColourPairTest {
     @Test
     public void testConstructorAndGetters() {
         ColourPair pair = new ColourPair(MajorColour.YELLOW, MinorColour.GREEN);
-        assertEquals(MajorColor.YELLOW, pair.getMajorColor());
-        assertEquals(MinorColor.GREEN, pair.getMinorColor());
+        assertEquals(MajorColour.YELLOW, pair.getMajorColor());
+        assertEquals(MinorColour.GREEN, pair.getMinorColor());
     }
 
     @Test
